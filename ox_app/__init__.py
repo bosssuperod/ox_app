@@ -47,6 +47,7 @@ def add_player():
         db =  mysql.connection.cursor()
         db.execute("INSERT INTO players (name) VALUES (%s)", (name,))
         mysql.connection.commit()
+        db.close()
         return redirect(url_for('index'))
 
     return render_template('addPlayer.html')

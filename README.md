@@ -20,7 +20,7 @@ run `docker-compose up`
 
 **Definition**
 
- `GET /players`
+ `GET /getplayers`
 
  **Response**
 
