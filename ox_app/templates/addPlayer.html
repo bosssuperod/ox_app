@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}New player{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="container-narrow">
+  <form id="addPlayerForm" class="form form-add-player" method="POST" action="" role="form">
+    <label for="name">Name</label>
+    <input name="name" id="name" value="{{ request.form['name'] }}" required>
+    <p><input class="btn btn-primary" type="submit" value="Join"></p>
+    </form>
+</div>
+{% endblock %}

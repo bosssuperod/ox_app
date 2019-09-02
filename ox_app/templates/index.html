@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Noughts and Crosses{% endblock %}</h1>
+  <a class="action" href="{{ url_for('add_player') }}">New</a>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <input type="button" value="play">
+    </div>
+{% endblock %}
