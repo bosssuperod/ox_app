@@ -9,6 +9,8 @@ MYSQL_DB='db'
 ```
 run `docker-compose up`
 
+login in to MySQL using your Creds and run `db-schema`
+
 ## APIs
 - List all players
 - Add new players
